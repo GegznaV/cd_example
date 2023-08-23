@@ -38,6 +38,6 @@ jobs:
         - name: Push to docker hub
           uses: docker/build-push-action/@v4
           with:
-            repository: ${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKERHUB_REPO}}
+            repository: 
             push: true
-            tags: user/app:latest
+            tags: ${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKERHUB_REPO}}:latest
