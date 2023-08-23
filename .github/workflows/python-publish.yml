@@ -38,6 +38,5 @@ jobs:
         - name: Push to docker hub
           uses: docker/build-push-action/@v4
           with:
-            repository: 
             push: true
-            tags: ${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKERHUB_REPO}}:latest
+            tags: ${{secrets.DOCKERHUB_REPO}}:latest
